@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.8;
+	font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans JP', "ヒラギノ角ゴ ProN W3", "ヒラギノ角ゴ W3", "Hiragino Kaku Gothic ProN", 'メイリオ', Meiryo, sans-serif;
+	color: var(--text-color);
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: none;
+	transition: opacity 0.3s;
+
+
+	&:hover {
+		opacity: .8;
+	}
+}

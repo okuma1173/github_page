@@ -1,0 +1,180 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "ヒラギノ角ゴ W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+#gnav-content {
+  position: fixed;
+  top: 0;
+  /* チェックボックスonの時 left: 0; */
+  transform: translateX(260%);
+  z-index: 100;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+  transition: 0.5s ease;
+  /* 全プロパティ対象でアニメーション */
+}
+
+ul.gnav-list {
+  background: #fff;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+}
+
+ul.gnav-list li {
+  display: block;
+}
+
+ul.gnav-list li a {
+  display: block;
+  padding: 1.5em;
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+ul.gnav-list li a::first-line {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* checkboxを非表示に */
+.gnav-hidden {
+  display: none;
+}
+
+/* lavelで作るメニューボタン */
+/* ↓idである必要はなく、classでもよい */
+#gnav-btn {
+  /* display: block; は書いても書かなくてもok.
+  position:fixedだと自動でblockになる */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  background: transparent url(../画像/ico-nav.svg) center center no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+/* 薄い膜部分 */
+#gnav-black {
+  display: none;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#gnav-input:checked ~ #gnav-btn {
+  background: #fff url(../画像/ico-nav-close.svg) center center no-repeat;
+}
+
+#gnav-input:checked ~ #gnav-black {
+  display: block;
+}
+
+#gnav-input:checked ~ #gnav-content {
+  /* left: 0; */
+  transform: translateX(0);
+}
+
+.gnav-sns {
+  padding: 32px 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.gnav-sns {
+  margin-bottom: 24px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.gnav-sns li img {
+  width: 24px;
+  height: 24px;
+}
+
+.back1 {
+  background-color: #d2e8eb;
+}
+
+.back2 {
+  background-color: #fbf4c5;
+}
+
+.back3 {
+  background-color: #fde4d9;
+}
+
+.back4 {
+  background-color: #fadc82;
+}
+
+.back5 {
+  background-color: #ade0c4;
+}
+
+.back6 {
+  background-color: #f0fcfb;
+}
+
+.top-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30 -10px;
+  list-style: none;
+}
+.top-list li {
+  width: 100%;
+  padding: 40px 40px;
+}
+.top-list li a {
+  display: flex;
+  align-items: center;
+}
+.top-list li img {
+  flex: 0 1 90px;
+  width: 90px;
+}
+.top-list li time {
+  font-size: 10px;
+  color: var(--text-color);
+}
+li .top-list_info {
+  margin-left: 20px;
+}
+li .top-list_title {
+  margin-top: 0.25em;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .top-list li {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
