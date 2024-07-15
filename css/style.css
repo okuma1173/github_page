@@ -21,6 +21,33 @@ a:hover {
   opacity: 0.8;
 }
 
+.backnmb {
+  height: 130px;
+  padding-left: 30px;
+  margin-top: 50px;
+}
+
+.hero img {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hero {
+  background: url(../画像/mv-bg@2x.jpg) no-repeat center center/cover;
+}
+
+.hero h1 {
+  background-color: #fff;
+  padding-left: 30px;
+}
+
+.hero p {
+  background-color: #fff;
+  padding-left: 30px;
+}
+
 #gnav-content {
   position: fixed;
   top: 0;
@@ -120,28 +147,45 @@ ul.gnav-list li a::first-line {
   height: 24px;
 }
 
+.hight {
+  height: 400px;
+}
+.hight img {
+  height: 300px;
+  display: inline-block;
+  width: 100%;
+}
+
+.top-list_info p {
+  font-size: 14px;
+}
+
+.top-list_title {
+  font-size: 18px;
+}
+
 .back1 {
-  background-color: #d2e8eb;
+  background-color: #ecf4f9;
 }
 
 .back2 {
-  background-color: #fbf4c5;
+  background-color: #fbf3d2;
 }
 
 .back3 {
-  background-color: #fde4d9;
+  background-color: #f9f2eb;
 }
 
 .back4 {
-  background-color: #fadc82;
+  background-color: #fae8c2;
 }
 
 .back5 {
-  background-color: #ade0c4;
+  background-color: #e2efe7;
 }
 
 .back6 {
-  background-color: #f0fcfb;
+  background-color: #f2f5fb;
 }
 
 .top-list {
@@ -177,4 +221,8 @@ li .top-list_title {
   .top-list li {
     width: 50%;
   }
+}
+
+.heading-title {
+  background-color: #f8f8f8;
 }/*# sourceMappingURL=style.css.map */

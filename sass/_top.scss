@@ -1,6 +1,6 @@
 // MV
 
-@use '../mixins' as *;
+@use './mixins' as *;
 
 .hero {
     background: url(../画像/mv-bg@2x.jpg) no-repeat center center / cover;
@@ -13,39 +13,39 @@
     text-align: center;
     position: relative;
     z-index: 10;
+}
+
+h1 {
+    font-size: 31px;
+    letter-spacing: .03em;
+    margin-top: 0;
+    color: rgb(var(--white));
+}
+
+p {
+    font-size: 16px;
+    color: rgb(var(--white));
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: .01em;
+    margin-top: 0;
+}
+
+@include mq {
+    margin-top: 0;
+}
+
+@include mq(large) {
+    height: 600px;
 
     h1 {
-        font-size: 31px;
-        letter-spacing: .03em;
-        margin-top: 0;
-        color: rgb(var(--white));
+        font-size: 60px;
+        letter-spacing: .05em;
+        margin-bottom: 0.25em;
     }
 
     p {
-        font-size: 16px;
-        color: rgb(var(--white));
-        line-height: 1.5;
-        font-weight: bold;
-        letter-spacing: .01em;
-        margin-top: 0;
-    }
-
-    @include mq {
-        margin-top: 0;
-    }
-
-    @include mq(large) {
-        height: 600px;
-
-        h1 {
-            font-size: 60px;
-            letter-spacing: .05em;
-            margin-bottom: 0.25em;
-        }
-
-        p {
-            font-size: 24px;
-            letter-spacing: .04em;
-        }
+        font-size: 24px;
+        letter-spacing: .04em;
     }
 }
