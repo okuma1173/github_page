@@ -31,10 +31,6 @@ p {
     margin-top: 0;
 }
 
-@include mq {
-    margin-top: 0;
-}
-
 @include mq(large) {
     height: 600px;
 
@@ -48,4 +44,8 @@ p {
         font-size: 24px;
         letter-spacing: .04em;
     }
+}
+
+h1 {
+    margin-top: 0;
 }
